@@ -1,0 +1,166 @@
+/* CONTENT PROPERTY OF JUPITER AVIATION TECHNOLOGY LIMITED */
+
+/** Stylesheet for internal FAQ pages */
+
+.site-main {
+    padding-left: 0% !important;
+    width: 100% !important;
+}
+
+.entry-header {
+    display: none !important;
+}
+
+.gradient-container-faq {background: linear-gradient(180deg, #C8E6F8, transparent, transparent); padding-top: 20px;}
+
+.gradient-container-faq ._inner {max-width: 80%; text-align: center; margin: 0 auto; padding-top: 55px;}
+.gradient-container-faq ._inner ._title {font-size: 2rem; font-weight: bold; font-family: 'Inter'; color: #34424C;}
+.gradient-container-faq ._inner ._subtitle {
+    font-size: 1.25rem;
+    margin: 40px 0 75px 0;
+    color: #586C75;
+    font-weight: 600;
+}
+
+img.aircraft-overhead {
+    width: 225px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 40px;
+}
+
+.separator {
+    max-width: 80% !important;
+    border-top: 1px solid #d1eaf9;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.separator ._category_title {
+    color: #34424C;
+    font-weight: 700;
+    font-size: 21px;
+    margin: 40px 0;
+}
+
+.separator ._category_question {
+    color: #717171;
+    font-size: 18px;
+    font-weight: 700;
+    background-image: url(/parts/no_return.svg);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: 0px 9px;
+    padding-left: 25px;
+}
+
+.separator ._category_answer {
+    color: #545454;
+    padding-left: 25px;
+    margin: 15px 0 40px;
+}
+
+#faq_button_lg {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #999;
+    padding: 20px 20px 20px 20px;
+    margin-top: 0px;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    width: 400px;
+    margin: 10px 10px;
+    vertical-align: top;
+}
+
+#faq_button_lg ._image {
+    float: left;
+    margin-right: 20px;
+    width: 100px;
+}
+
+#faq_button_lg:hover {
+    box-shadow: rgba(50, 50, 50, 0.15) 0px 0px 6px 1px;
+    border: 1px solid #00acdd
+}
+
+#faq_button_lg ._title {
+    font-weight: 600;
+    color: #666;
+    text-decoration: none !important;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif, sans-serif;
+    padding-bottom: 2px;
+    text-align: left;
+}
+
+#faq_button_lg ._text {
+    font-weight: 400;
+    color: #999;
+    font-size: 14px;
+    padding-top: 0px !important;
+    margin-bottom: 10px !important;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif, sans-serif;
+    text-align: left;
+}
+
+.search-box{
+    position: relative;
+    max-width: 500px;
+    min-width: 300px;
+    width:40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#itemsList{
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    width: 98%;
+    margin-left: 1%;
+    
+    margin-top: 0;
+}
+#itemsList li {
+    cursor: pointer;
+    padding: 3px;
+    background: #fff;
+    margin-bottom: 0px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    text-align: left;
+    padding-left: 15px;
+    display: none;
+}
+#itemsList li:hover {
+    background-color: lightgray;
+}
+#faq-search-input{
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid #D3D3D3;
+    background-color: #ffffff85;
+    height: 50px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 8px 20px;
+    /* color: #B7B7B7; */
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 1280px) {
+    #faq_button_lg {width: 45%;padding: 15px;}
+    #faq_button_lg ._image {width: 75px;margin-right: 10px;}
+    #faq_button_lg ._text {font-size: 13px}
+}
+
+@media only screen and (max-width: 900px) {
+    #faq_button_lg {width: 95% !important;}
+}
+
+@media only screen and (max-width: 460px) {
+    #faq_button_lg img {display: none !important;}
+}

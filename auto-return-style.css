@@ -1,0 +1,94 @@
+/**
+ * 
+ * File Name: Auto-Return Style
+ *
+ *
+ * @package WordPress
+ * @subpackage Twenty_Sixteen
+ * @since Twenty Sixteen 1.0
+ */
+
+html {background-color: #f1f1f1 !important}
+
+.s2member-return-body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(https://new.pilotaptitudetest.com/parts/login_logo_small.svg);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: 50% 50px;
+    background-color: white !important;
+    padding-top: 155px;
+    width: 75%;
+    margin-top: 50px !important;;
+    border-radius: 6px;
+    border: 1px solid #dfdfdf;
+    /* margin-bottom: 50px !important; */
+    box-shadow: rgba(50, 50, 50, 0.035) 0px 0px 6px 1px;
+    margin: 0 auto;
+    }
+
+
+.s2member-return-body table {
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+#s2member-default-return-response-div {
+    border-radius: 6px;
+    background-color: #e1eef6;
+    color: #144268;
+    font-size: 14px;
+    padding: 20px 30px 20px 30px;
+    margin: 8px 30px 15px 30px;
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #00acdd;
+    font-weight: 500;
+    line-height: 2em;
+}
+
+#s2member-default-return-response-div h1, #s2member-default-return-response-div h1 strong {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25em;
+    position: relative;
+    display: block;
+    padding-left: 0px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 0 !important;
+}
+
+#s2member-default-return-response-div h2, #s2member-default-return-response-div h2 strong {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    position: relative;
+    display: block;
+    padding-left: 0px;
+    font-weight: 500;
+    line-height: 1.8em
+}
+
+#s2member-default-return-continue a{
+    background-color: #00acdd;
+    color: white;
+    border-radius: 30px;
+    display: block;
+    width: fit-content;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px 20px;
+    font-family: 'Inter';
+    font-size: 17px;
+    transition: 0.3s;
+    margin-top: 25px;
+    text-decoration: none !important;
+}
+
+#s2member-default-return-continue a:active, #s2member-default-return-continue a:hover {
+    background-color: #303030 !important;    
+}
+
+@media (max-width: 900px) {
+    .s2member-return-body {width: 100%; border: none; box-shadow: none; border-radius: none; margin-top: 0px !important;}
+    html {background-color: white !important;}
+}

@@ -1,0 +1,147 @@
+.error {color: #5f6470 !important;text-align: center;margin-top: 70px;/* border: 1px solid #dfdfdf; *//* margin-right: 5%; *//* margin-left: 5%; */padding: 30px;border-radius: 6px;}
+.error h1 {font-weight: 700;font-size: 34px;margin: 0px 20% 30px 20%;color: #9b9b9b;/* border-bottom: 1px solid #dfdfdf; *//* padding-bottom: 30px; */}
+.error h3 {font-weight: 500;padding: 0px 10% 10px 10%;font-size: 16px;color: #b1b1b1;}
+.error_menu {color: #646464;font-size: 14px;text-align: center;padding-top: 50px;font-family: 'Inter', sans-serif;font-weight: 600;font-size: 18px;}
+.error_menu a {color: #636466;font-size: 15px;font-weight: 500;padding-bottom: 10px !important;display: inline-block;}
+.error_menu a:hover {color: #008cc2}
+
+
+.signout {background-color: #2D2E33; text-align: center; padding: 30px 0px;}
+.signout a {color: white; font-weight: 500; font-size: 13px; background-color: #308DD8; padding: 8px 30px 8px 30px; border-radius: 3px; border-bottom: 2px solid #227EBC; border-top: 2px solid #369BE0}
+.userdata  {background-color: #2D2E33; height: 200px; padding: 30px; color: #EFEFEF}
+
+.hidden {
+  display: none;
+}
+
+.clearboth {
+  clear: both;
+}
+
+.relative {
+  position: relative;
+}
+
+.profile_data .user_menu_close,
+.profile_data .user_menu_open {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  color: lightgrey;
+  font-size: 18px;
+}
+
+.menu-container {
+  width: 24%;
+}
+
+#profile_display_container {
+  position: absolute;
+  width: 400px;
+  right: 0;
+  top: 82px;
+  bottom: 0;
+  background: #333439;
+  z-index: 2;
+  box-sizing: border-box;
+  /* border-left: 1px solid #E6E6E6; */
+}
+
+#profile_display_container a li {color: #EFEFEF;margin-bottom: 15px;background-size: 28px;background-repeat: no-repeat;background-position: 0px 0px;padding: 4px 0px 0px 40px !important;}
+
+li.settings {background-image: url(http://new.pilotaptitudetest.com/parts/user-profile-icon-settings.png);}
+li.profile {background-image: url(http://new.pilotaptitudetest.com/parts/user-profile-icon-account.png);}
+li.messages {background-image: url(http://new.pilotaptitudetest.com/parts/user-profile-icon-messages.png);}
+li.forum {background-image: url(http://new.pilotaptitudetest.com/parts/user-profile-icon-forum.png);}
+li.knowledgebase {background-image: url(http://new.pilotaptitudetest.com/parts/user-profile-icon-knowledgebase.png);}
+li.help {background-image: url(http://new.pilotaptitudetest.com/parts/user-profile-icon-help.png);}
+
+#profile_display_container ul.sub_menu {
+  margin: 0;
+  padding: 0;
+  /* background: #eee; */
+  list-style-type: none;
+}
+
+#profile_display_container ul.sub_menu li {
+  float: left;
+  width: 33.3%;
+  box-sizing: border-box;
+  text-align: center;
+  background: #51555e;
+  border-right: 1px solid #4c4c4c;
+  color: #fff;
+  position: relative;
+  margin: 0%;
+  padding: 0px;
+  line-height: 24px;
+}
+
+#profile_display_container ul.sub_menu li span {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+#profile_display_container ul.sub_menu li:last-child {
+  border-right: 0 none;
+}
+
+#profile_display_container ul.sub_menu li i {
+  font-size: 23px;
+}
+
+#profile_display_container ul.sub_menu li a {
+  color: #fff;
+  display: block;
+  padding: 25px 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#profile_display_container .content {
+  padding: 20px;
+  font-size: 13px;
+}
+
+div.ws-plugin--s2member-password-strength {
+    padding: 10px 3px !important;
+    background-color: #eee;
+    border-radius: 3px;
+    margin-top: 30px !important;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #aaa !important;
+    font-size: 14px;
+    font-weight: 600;
+}
+div.ws-plugin--s2member-password-strength-short {
+    background-color: #ffa0a0;
+    color: #d74c4c !important;
+}
+div.ws-plugin--s2member-password-strength-weak {
+    background-color: #ffb78c;
+    color: #bd5f28 !important;
+}
+div.ws-plugin--s2member-password-strength-good {
+    background-color: #ffec8b;
+    color: #b49f19 !important;
+}
+div.ws-plugin--s2member-password-strength-strong {
+    background-color: #c3ff88;
+    color: #67bf10 !important;
+}
+div.ws-plugin--s2member-password-strength-mismatch {
+    background-color: #d6c1ab;
+    color: #846544 !important;
+}
+
+.password-edit-text {font-size: 14px; color: #777; margin-bottom: 30px;}
+
+div#ws-plugin--s2member-profile-saved {
+    font-size: 100% !important;
+    color: #6edf34 !important;
+}
+

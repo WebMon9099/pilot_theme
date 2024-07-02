@@ -1,0 +1,106 @@
+.forgetmenot {margin: 35px 0px !important;}
+.forgetmenot label {font-size: 12px !important;color: #777 !important;font-weight: 400 !important;width: auto !important;}
+
+.login form input[type=checkbox] {margin-top: -3px !important;border: 1px solid #ddd;border-radius: 4px;}
+.login form input[type=text] {margin: 10px 6px 30px 0;border-radius: 3px;width: 100%;}
+
+.form_detail {margin-bottom: 20px;color: #008bc1;font-weight: 500;}
+
+#login{font-family: 'Open Sans', sans-serif;background-image: url('https://new.pilotaptitudetest.com/parts/login_logo_small.svg');background-size: 300px;background-repeat: no-repeat;background-position: 50% 50px;background-color: white;padding-top: 155px;width: 75%;margin-top: 50px;border-radius: 6px;border: 1px solid #dfdfdf;/* margin-bottom: 50px !important; */box-shadow: rgba(50, 50, 50, 0.035) 0px 0px 6px 1px;}
+
+.login .message {margin: 1% 5%;}
+.login .message, .login .success {border: 1px solid #ddd !important;font-weight: 400;font-size: 14px;padding: 20px 30px 20px 30px;margin-top: 8px;margin-bottom: 15px;font-family: 'Open Sans', sans-serif;}
+.login .register {border-radius: 6px;background-color: #edffdf;color: #494949;border: 1px solid #74D813 !important;}
+.login .register strong, .login .password_reset strong {font-family: 'Open Sans', sans-serif;font-size: 1.25em;margin-bottom: 13px;position: relative;display: block;padding-left: 0px;}
+
+
+#login_error strong {font-weight: 500}
+
+.login h1 a {display: none !important;}
+.login a {color: #008bc1; font-weight: 500;}
+.login label {width: 100%;line-height: 2.35em;color: #999;font-family: 'Inter', sans-serif;font-weight: 600;font-size: 17px !important;}
+.login form {padding: 20px 5% 0px 5%;margin-top: 10px;border: none !important;box-shadow: none !important;}
+.login input {box-shadow: none !important;margin-top: 4px;border-radius: 3px;color: #525252 !important;font-weight: 500 !important;padding-left: 10px;border: 1px solid #d1d1d1;font-size: 16px !important;padding: 10px 10px !important;}
+.login input:focus {
+  border: 1px solid #008cc2;
+}
+
+body {background-color: #f1f1f1 !important;/* margin: 0 !important; */margin-bottom: 50px;/* height: 0 !important; */}
+
+
+input#user_pass.input {font-size: 16px !important;height: 45px;padding: 20px 10px !important;margin-top: 10px;border-radius: 3px;font-family: 'Open Sans', sans-serif;}
+input#user_login.input {/* font-size: 27px !important; */height: 45px;padding: 20px 10px !important;margin-top: 10px;border-radius: 3px;}
+.login .button {font-size: 18px !important;font-weight: 500 !important;/* padding: 12px 0px !important; */height: auto !important;/* color: white; */text-shadow: none !important;background-color: #34424C;border: none;display: block;border-radius: 30px;width: 100%;border: 0px !important;font-family: 'Inter', sans-serif;line-height: 35px !important;transition: 0.3s;}
+
+.login .button.wp-hide-pw {background: none !important;padding: 0 !important;top: 15px !important;right: 5px;color: #666 !important;}
+.login .button.wp-hide-pw:hover, login .button.wp-hide-pw:focus, login .button.wp-hide-pw:active {box-shadow: none !important; outline: 0 !important;}
+.login #nav a {font-family: 'Open Sans', sans-serif; font-size: 15px !important; text-align: center; display: block; text-decoration: none; color: #bfbfbf; padding: 20px 0;}
+.login #nav a:first-child {/* border-bottom: 1px solid #e6e6e6; */}
+
+.login #nav a:hover {color: #3793d1;}
+
+.login .button:hover, .login .button:active {box-shadow: rgba(50, 50, 50, 0.09) 0px 0px 6px 1px !important;background: #2a3740}
+.login select {width: 100% !important;max-width: 100%;padding: 5px 10px;margin-top: 4px !important;font-size: 15px;color: #888;border: 1px solid #ddd;font-weight: 400;}
+.login select:focus {border: 1px solid white !important; color: #888;}
+.login select:hover {color: #888}
+.login select option {font-size: 15px; color: #888}
+.login #nav {padding: 0px !important; border-top: 1px solid #E6E6E6;}
+#backtoblog {display: none !important;}
+
+#reg_passmail {
+    border-radius: 6px;
+    background-color: #b5b5b529;
+    padding: 20px 30px;
+    color: #666;
+    border: 1px solid #d3d3d3;
+    font-size: 14px;
+    margin-bottom: 40px !important;
+}
+
+#reg_passmail strong {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #555;
+    display: block;
+}
+
+p.gdpr-terms-container {margin-top: 30px; line-height: 2.75em}
+.gdpr-terms-container a {color: #008bc1;}
+p.gdpr-terms-container input[type=checkbox] {margin-top: -3px !important;}
+
+#login_error {margin: 1% 5% !important;border: 1px solid #ddd;/* border-left: 3px solid #e96b6b !important; */}
+#login_error strong {color: #e96b6b; font-weight: bold;}
+
+.registration_url {display: none;}
+
+.lost_password_url a{font-family: 'Open Sans', sans-serif; font-size: 15px !important; text-align: center; display: block; text-decoration: none; color: #bfbfbf; padding: 20px 0;}
+.lost_password_url a:hover {color: #3793d1;}
+
+input[type=checkbox]:checked:before {
+    margin: -11px 0 0 -11px;
+}
+
+@media screen and (max-width: 400px) {
+    #login {padding-top: 145px !important;}
+}
+
+@media screen and (max-width: 900px) {
+    #login {width: 100% !important;border: none !important;border-radius: 0px !important;box-shadow: none !important;margin-top: 0px;}
+    body {background-color: white !important; margin-bottom: 0px !important;}
+}
+
+@media screen and (max-width: 782px) {
+    
+    input[type=checkbox]:checked:before {
+    margin: -13px 0 0 -14px;
+}
+
+}
+
+html {height:auto !important;}
+
+.wp-core-ui .button, .wp-core-ui .button-secondary {color: white !important;}
+.wp-generate-pw {margin-bottom: 20px !important; background-color: #34424c !important; border: 0px !important; outline-color:}
+.wp-generate-pw:hover {background-color: #2a353d !important;}
+.wp-generate-pw:focus {}
