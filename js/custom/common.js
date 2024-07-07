@@ -83,9 +83,12 @@
 			function(){
 
 			},
-			function(){
-				$('.popupbox').hide();
-				$('.secondary-menu li a').css('background', 'transparent');
+			function(e){
+				console.log('eee', $(e.target).attr('class'));
+				if ($(e.target).attr('class') !== 'select-tag'){
+					$('.popupbox').hide();
+					$('.secondary-menu li a').css('background', 'transparent');
+				}
 			}
 		)
 		var desc_max_length = 100;
