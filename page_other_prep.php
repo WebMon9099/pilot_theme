@@ -6,15 +6,14 @@
  * Please note that this is the WordPress construct of pages and that
  * other "pages" on your WordPress site will use a different template.
  * 
- * Template Name: Products
+ * Template Name: Other Prep
  * @package WordPress
  * @subpackage Twenty_Sixteen
  * @since Twenty Sixteen 1.0
  */
 
-			require_once get_stylesheet_directory() . '/css/activity-shortcodes.php';
+			require_once get_stylesheet_directory() . '/css/activity-shortcodes-expanded.php';
 get_header(); 
-
 ?>
 <?php
 echo do_shortcode('[pat_sales_notifications]');
@@ -24,31 +23,13 @@ echo do_shortcode('[pat_sales_notifications]');
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "<?php the_title(); ?>",
-  "image": "<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>",
+  "image": "https://pilotaptitudetest.com/parts/other-preparation/featured-images/<?php the_field('product_image'); ?>.png",
   "offers": {
     "@type": "Offer",
     "price": "29.99",
     "priceCurrency": "GBP"
   }
 }
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetElement = document.querySelector('.feedback');
-            if (targetElement) {
-                const offset = 160; // Scroll to 160px above the element
-                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-});
 </script>
 <style>
 #pat-sales-notifications {bottom: 83px !important}
@@ -57,11 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-<div id="public-sidebar" class="public-sidebar">
-      <div class="public-sidebar-title">Information about Activities</div>
-      <p id="sidebar-content"></p>
-</div>
-<div id="overlay" class="overlay"></div>
 		<?php
 		// Start the loop.
 		while ( have_posts() ) :

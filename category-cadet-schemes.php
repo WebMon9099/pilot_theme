@@ -3,7 +3,7 @@
 /**
  * The template for displaying archive pages
  *
- * Template Name: Archives for Flying Schools
+ * Template Name: Archives for Cadet Schemes
  *
  * Used to display archive-type pages if nothing more specific matches a query.
  * For example, puts together date-based pages if no date.php file exists.
@@ -20,7 +20,20 @@
  */
 
 get_header(); ?>
-
+<style>
+.pat_helper.grey {
+	color: #364773;
+	background-color: #e5e5e575 !important;
+	background-image: none !important;
+	border-left: 3px solid #5b7398 !important;
+	font-size: 1em;
+	padding: 30px;
+        margin-top: 0px;
+}
+.pat_helper.grey a {
+	font-weight: 700;
+}
+</style>
 <div id="test_header">
 	<div class="_title">
 		<a href="/knowledgebase">Knowledgebase</a>
@@ -47,18 +60,13 @@ get_header(); ?>
 				<?php the_archive_description('<div id="taxonomy-description">', '</div>'); ?>
 
 					
-								<div class="category_container"> 
-									<ul>
-										<?php foreach ($posts as $post) { ?>
-										<li><a style="border-right: 3px solid <?php the_field('article-color'); ?>" href="<?php echo get_permalink($post->ID) ?>">
-											<img class="attachment-post-thumbnail" src="<?php the_field('organisation-image'); ?>"> <div class="article_title" style="margin-left: 25px"><?php echo $post->post_title ?></div>
-											</a></li>
-										<?php } ?>
-									</ul>
-								</div>
+					<div class="pat_helper grey">
+						<b>We're currently creating our Cadet Scheme Guides</b>
+						<p>As of 21st August 2024, we're populating this page with Cadet Scheme Guides.</p></br>
+						<p>Please check back in a few weeks to view this updated page and associated guides, or <a href="/contact">get in touch</a> to learn how to prepare for your pilot assessment.</p>
+					</div>
 							
 					
-
 				
 			<?php } ?>
 

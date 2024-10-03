@@ -21,6 +21,21 @@
 
 get_header(); ?>
 
+<style>
+.pat_helper.grey {
+	color: #364773;
+	background-color: #e5e5e575 !important;
+	background-image: none !important;
+	border-left: 3px solid #5b7398 !important;
+	font-size: 1em;
+	padding: 30px;
+        margin-top: 0px;
+}
+.pat_helper.grey a {
+	font-weight: 700;
+}
+</style>
+
 <div id="test_header">
 	<div class="_title">
 		<a href="/knowledgebase">Knowledgebase</a>
@@ -46,15 +61,11 @@ get_header(); ?>
 				<?php the_archive_description('<div id="taxonomy-description">', '</div>'); ?>
 
 					
-								<div class="category_container"> 
-									<ul>
-										<?php foreach ($posts as $post) { ?>
-										<li class="skills"><a class="skills" style="" href="<?php echo get_permalink($post->ID) ?>">
-											<?php echo get_the_post_thumbnail(); ?><div class="article_title"><?php echo $post->post_title ?></div>
-											</a></li>
-										<?php } ?>
-									</ul>
-								</div>
+					<div class="pat_helper grey">
+						<b>We're currently creating our Skill Guides</b>
+						<p>As of 21st August 2024, we're populating this page with Skill Guides.</p></br>
+						<p>Please check back in a few weeks to view this updated page and associated guides, or <a href="/contact">get in touch</a> to learn how to prepare for your pilot assessment.</p>
+					</div>
 							
 					
 

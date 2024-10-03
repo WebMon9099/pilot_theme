@@ -35,7 +35,11 @@ Here are some helpful links instead:</br></br>
 					<a href="/planner">Planner</a>		
 					
 <?php } else { ?>
-    
+ <?php
+// Redirect to homepage if 404 page is accessed
+wp_redirect( home_url() );
+exit;
+?>   
 Here are some helpful links instead:</br></br>
 					<a href="/about">About</a></br>
 					<a href="/features">Features</a></br>

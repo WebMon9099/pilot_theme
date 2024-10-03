@@ -8,20 +8,24 @@
  */
 ?>
 <style>
+.assessment-process-container .completion {background-color: <?php the_field('article-color-2'); ?> !important}
+.assessment-process-container li:last-child::after {background-image: url('<?php the_field('aircraft'); ?>') !important; top: -38%; left: 85.5%; width: 235px; height: 160px;}
+.reasons-container ._left {color: <?php the_field('article-color'); ?>40}
+p.faq::before {background-color: <?php the_field('article-color'); ?>}
 i {opacity: 0.8}
-.post-title b {opacity: 0.6;}
+@media only screen and (max-width: 430px) {.assessment-process-container li:last-child::after {width: 125px; left: 77%; top: -20%}}
 </style>
-<a name="top" id="top"></a>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<div class="post-header-container" style="border-top: 1px solid <?php the_field('article-color-2'); ?>; background: linear-gradient(to right, <?php the_field('article-color-2'); ?>, <?php the_field('article-color-2'); ?>, <?php the_field('article-color-2'); ?>95);"><div class="post-header" style="background-image: url('/parts/other-preparation/white_aircraft.png'); background-repeat: no-repeat; background-position-y: 40%;"><?php the_title(); ?> <span>Pilot Assessment <span class="hidden">Information</span> 2024</span></div></div>
+<div class="post-header-container" style="border-top: 1px solid <?php the_field('article-color-2'); ?>; background: linear-gradient(to right, <?php the_field('article-color-2'); ?>, <?php the_field('article-color-2'); ?>, <?php the_field('article-color-2'); ?>95);"><div class="post-header" style="background-image: url('<?php the_field('organisation-image'); ?>'); background-repeat: no-repeat;"><?php the_title(); ?> <span>Pilot Assessment <span class="hidden">Information</span> 2024</span></div></div>
 	
 	<div class="floating-menu">
 	<div class="floating-menu-title" style="background-color: <?php the_field('article-color-3'); ?>">Contents</div>
 	<ul>
 	<li><a href="#about">About <?php the_title(); ?></a></li>
-	<li><a href="#breakdown-of-assessment">Breakdown of Assessment</a></li>
-	<?php if(!is_user_logged_in()): ?><li><a href="#using-our-software">Using our Software</a></li>
-	<li><a href="#faq">Frequently Asked Questions</a></li><?php else: // Else show this. ?><?php endif; ?>
+	<li><a href="#assessment-process">Assessment Process</a></li>
+	<li><a href="#using-our-software">Using our Software</a></li>
+	<li><a href="#faq">Frequently Asked Questions</a></li>
 	</ul>
 	<?php if(!is_user_logged_in()): ?>
 	<div class="product"><p>Preparation Software for the</br><span><?php the_field('associated-product'); ?></span></p>
@@ -37,7 +41,7 @@ i {opacity: 0.8}
 		<div class="header_text_container">
 			
 			<div class="_alt" style="border-bottom: 2px solid <?php the_field('article-color'); ?>"><span><?php the_title(); ?></span> Pilot Assessment Guide</div></br>
-		<div class="update-data"><?php printf( __( '<b>Updated:</b> %s', 'textdomain' ), get_the_modified_date('j\<\s\u\p\>S\<\/\s\u\p\> M Y') ); ?></div>
+			<div class="update-data"><?php printf( __( '<b>Updated:</b> %s', 'textdomain' ), get_the_modified_date('j\<\s\u\p\>S\<\/\s\u\p\> M Y') ); ?></div>
 		</div>
 	
 	</header><!-- .entry-header -->
@@ -61,6 +65,7 @@ i {opacity: 0.8}
 				get_template_part( 'template-parts/biography' );
 			}
 			?>
+
 <?php if(!is_user_logged_in()): ?>
 <div id="module-purchase" style="border-left: 3px solid <?php the_field('article-color'); ?>">
 <div class="purchase-information">

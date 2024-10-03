@@ -86,12 +86,6 @@
 			'desc' => ''
 		],
 		[
-			"name" => "Air Berlin MPL Cadet Programme",
-			"link" => "/air-berlin-mpl-cadet-programme",
-			"img_src" => '',
-			'desc' => ''
-		],
-		[
 			"name" => "Air Cairo",
 			"link" => "/air-cairo",
 			"img_src" => '',
@@ -109,12 +103,6 @@
 			"img_src" => '',
 			'desc' => ''
 		],
-			[
-			"name" => "Air France Cadet Pilot Program",
-			"link" => "/air-france-cadet-pilot-program",
-			"img_src" => '',
-			'desc' => ''
-		],
 		[
 			"name" => "Air India Cadet Program",
 			"link" => "/air-india-cadet-program",
@@ -128,6 +116,12 @@
 			'desc' => ''
 		],
 		[
+			"name" => "Air New Zealand",
+			"link" => "/air-new-zealand",
+			"img_src" => '',
+			'desc' => ''
+		],
+		[
 			"name" => "airBaltic",
 			"link" => "/airbaltic",
 			"img_src" => '',
@@ -136,12 +130,6 @@
 		[
 			"name" => "AirBlue",
 			"link" => "/airblue",
-			"img_src" => '',
-			'desc' => ''
-		],
-		[
-			"name" => "Airbus",
-			"link" => "/airbus",
 			"img_src" => '',
 			'desc' => ''
 		],
@@ -183,7 +171,7 @@
 		],
 		[
 			"name" => "Ascension Academy with Air Transat",
-			"link" => "/ascension-academy-with-air-transat",
+			"link" => "/air-transat-ascension-academy",
 			"img_src" => '',
 			'desc' => ''
 		],
@@ -224,20 +212,20 @@
 			'desc' => ''
 		],
 		[
-			"name" => "Bluebird Nordic",
-			"link" => "/bluebird-nordic",
-			"img_src" => '',
-			'desc' => ''
-		],
-		[
 			"name" => "British Airways",
 			"link" => "/british-airways",
 			"img_src" => '',
 			'desc' => ''
 		],
 		[
-			"name" => "British Airways NQPP & Whitetail Cadet Schemes",
-			"link" => "/british-airways-nqpp-&-whitetail-cadet-schemes",
+			"name" => "British Airways NQPP",
+			"link" => "/british-airways-newly-qualified-pilot-pathway",
+			"img_src" => '',
+			'desc' => ''
+		],
+		[
+			"name" => "British Airways Whitetail",
+			"link" => "/british-airways-whitetail",
 			"img_src" => '',
 			'desc' => ''
 		],
@@ -315,7 +303,7 @@
 		],
 		[
 			"name" => "DHL UK (and DHL Bahrain)",
-			"link" => "/dhl-uk-and-dhl-bahrain",
+			"link" => "/dhl",
 			"img_src" => '',
 			'desc' => ''
 		],
@@ -350,12 +338,6 @@
 			'desc' => ''
 		],
 		[
-			"name" => "ESA European Space Agency",
-			"link" => "/esa-european-space-agency",
-			"img_src" => '',
-			'desc' => ''
-		],
-		[
 			"name" => "Etihad Airways",
 			"link" => "/etihad-airways",
 			"img_src" => '',
@@ -368,8 +350,8 @@
 			'desc' => ''
 		],
 		[
-			"name" => "F9 Pilot Cadet Program",
-			"link" => "/f9-pilot-cadet-program",
+			"name" => "Frontier Airlines F9 Pilot Cadet Program",
+			"link" => "/frontier-airlines-f9-pilot-cadet-program",
 			"img_src" => '',
 			'desc' => ''
 		],
@@ -382,6 +364,12 @@
 		[
 			"name" => "Flight One",
 			"link" => "/flight-one",
+			"img_src" => '',
+			'desc' => ''
+		],
+		[
+			"name" => "Flight Training Adelaide",
+			"link" => "/flight-training-adelaide",
 			"img_src" => '',
 			'desc' => ''
 		],
@@ -428,8 +416,8 @@
 			'desc' => ''
 		],
 		[
-			"name" => "Helvetic Airways Cadet Program",
-			"link" => "/helvetic-airways-cadet-program",
+			"name" => "Helvetic Airways Airline Pilot Cadet Program",
+			"link" => "/helvetic-airways-airline-pilot-cadet-program",
 			"img_src" => '',
 			'desc' => ''
 		],
@@ -471,7 +459,7 @@
 		],
 		[
 			"name" => "Jazz Approach",
-			"link" => "/jazz-approach",
+			"link" => "/air-canada-jazz-approach",
 			"img_src" => '',
 			'desc' => ''
 		],
@@ -488,14 +476,20 @@
 			'desc' => ''
 		],
 		[
+			"name" => "JetBlue",
+			"link" => "/jetblue",
+			"img_src" => '',
+			'desc' => ''
+		],
+		[
 			"name" => "JetBlue Gateway Select",
 			"link" => "/jetblue-gateway-select",
 			"img_src" => '',
 			'desc' => ''
 		],
 		[
-			"name" => "Jetstar Asia (for Cadets)",
-			"link" => "/jetstar-asia-for-cadets",
+			"name" => "Jetstar Asia",
+			"link" => "/jetstar-asia",
 			"img_src" => '',
 			'desc' => ''
 		],
@@ -560,14 +554,14 @@
 			'desc' => ''
 		],
 		[
-			"name" => "Malaysian Airlines",
-			"link" => "/malaysian-airlines",
+			"name" => "Malaysia Airlines",
+			"link" => "/malaysia-airlines",
 			"img_src" => '',
 			'desc' => ''
 		],
 		[
-			"name" => "NetJets Europe",
-			"link" => "/netjets-europe",
+			"name" => "NetJets",
+			"link" => "/netjets",
 			"img_src" => '',
 			'desc' => ''
 		],
@@ -608,12 +602,6 @@
 			'desc' => ''
 		],
 		[
-			"name" => "Qatar Emiri Air Force",
-			"link" => "/qatar-emiri-air-force",
-			"img_src" => '',
-			'desc' => ''
-		],
-		[
 			"name" => "Royal Brunei Airlines",
 			"link" => "/royal-brunei-airlines",
 			"img_src" => '',
@@ -627,7 +615,7 @@
 		],
 		[
 			"name" => "Ryanair",
-			"link" => "/ryanair",
+			"link" => "/preparation-low-cost-carriers",
 			"img_src" => '',
 			'desc' => ''
 		],
@@ -699,7 +687,7 @@
 		],
 		[
 			"name" => "Southwest Airlines Destination 225°® Cadet Pathway",
-			"link" => "/southwest-airlines-destination-cadet-pathway",
+			"link" => "/southwest-airlines-destination-225-cadet-pathway",
 			"img_src" => '',
 			'desc' => ''
 		],
@@ -728,12 +716,6 @@
 			'desc' => ''
 		],
 		[
-			"name" => "SusiAir",
-			"link" => "/susi-air",
-			"img_src" => '',
-			'desc' => ''
-		],
-		[
 			"name" => "SWISS (Swiss International Air Lines)",
 			"link" => "/swiss-swiss-international-air-lines",
 			"img_src" => '',
@@ -742,12 +724,6 @@
 		[
 			"name" => "TAP Air Portugal",
 			"link" => "/tap-air-portugal",
-			"img_src" => '',
-			'desc' => ''
-		],
-		[
-			"name" => "Thai Air Force",
-			"link" => "/thai-air-force",
 			"img_src" => '',
 			'desc' => ''
 		],
@@ -788,38 +764,14 @@
 			'desc' => ''
 		],
 		[
-			"name" => "TUI fly (Belgium)",
-			"link" => "/tui-fly-belgium",
-			"img_src" => '',
-			'desc' => ''
-		],
-		[
-			"name" => "TUI fly (Deutschland)",
-			"link" => "/tui-fly-deutschland",
-			"img_src" => '',
-			'desc' => ''
-		],
-		[
-			"name" => "TUI fly (Netherlands)",
-			"link" => "/tui-fly-netherlands",
-			"img_src" => '',
-			'desc' => ''
-		],
-		[
-			"name" => "TUI fly (Nordic)",
-			"link" => "/tui-fly-nordic",
+			"name" => "TUI Fly",
+			"link" => "/tui-fly",
 			"img_src" => '',
 			'desc' => ''
 		],
 		[
 			"name" => "TUI UK",
 			"link" => "/tui-uk",
-			"img_src" => '',
-			'desc' => ''
-		],
-		[
-			"name" => "TUI UK (for Cadets)",
-			"link" => "/tui-uk-for-cadets",
 			"img_src" => '',
 			'desc' => ''
 		],
@@ -878,6 +830,12 @@
 			'desc' => ''
 		],
 		[
+			"name" => "Vueling",
+			"link" => "/vueling",
+			"img_src" => '',
+			'desc' => ''
+		],
+		[
 			"name" => "Vueling Cadet Pilot Programme",
 			"link" => "/vueling-cadet-pilot-programme",
 			"img_src" => '',
@@ -895,12 +853,6 @@
 			"img_src" => '',
 			'desc' => ''
 		],
-		[
-			"name" => "Zenon",
-			"link" => "/zenon",
-			"img_src" => '',
-			'desc' => ''
-		]
 	];
 	
 	// foreach($all_data as $item){
@@ -1153,9 +1105,9 @@
 					<div class="site-branding">
 						<?php if(is_user_logged_in()): ?>
 						<!-- <a href="/dashboard"><img src="/parts/logo_concise.png"></a> -->
-						<a href="/dashboard"><img src="<?php echo home_url("/parts/logo_concise.png"); ?>"></a>
+						<a href="/dashboard"><img src="<?php echo home_url("/parts/logo_concise.svg"); ?>"></a>
 <?php else: // Else show this. ?>
-						<a href="/homepage"><img src="/parts/logo_concise.png"></a>
+						<a href="/homepage"><img src="/parts/logo_concise.svg"></a>
 						<?php endif; ?>
 						<?php if (is_front_page() && is_home()) : ?>
 							<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
@@ -1202,9 +1154,12 @@
 						<a href="/preparation-strategy">
 							<div class="preparation_strategy_button"></div>
 						</a>
-						<a href="/account">
-							<div class="profile_button"></div>
-						</a>
+						
+							<div class="profile_button">
+							<?php $unread_announcements = do_shortcode('[unread_announcements url="/"]'); echo $unread_announcements; ?>
+							<a href="/account"><img src="/parts/profile_icon.svg"></a>
+							</div>
+						
 						<a href="<?php echo wp_logout_url('/goodbye') ?>">
 							<div class="access_button">Log Out</div>
 						</a>
@@ -1299,6 +1254,7 @@
 										<a class="_secondary" href="/preparation-experienced-pilots"><span>for</span> Experienced Pilots</a>
 										<a class="_secondary" href="/preparation-cadet-schemes"><span>for</span> Cadet Schemes</a>
 										<a class="_secondary" href="/preparation-low-cost-carriers"><span>for</span> Low-Cost Carriers</a>
+									<a class="_primary" style="margin-top: 10px;" href="/knowledgebase">Knowledgebase</a>
 									<div style="border-bottom: 1px solid #DDDDDD; margin: 35px 27px 35px 27px;"></div>
 									<a class="_primary" href="#">Other Preparation</a>
 										<a class="_secondary_other" href="/maths-for-pilots"><img src="/parts/mobile-menu/maths.svg">Maths for Pilots</a>

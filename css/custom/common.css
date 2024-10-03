@@ -50,12 +50,12 @@
 
 #profile_display_container a li {color: #EFEFEF;margin-bottom: 15px;background-size: 28px;background-repeat: no-repeat;background-position: 0px 0px;padding: 4px 0px 0px 40px !important;}
 
-li.settings {background-image: url(http://new.pilotaptitudetest.com/parts/user-profile-icon-settings.png);}
-li.profile {background-image: url(http://new.pilotaptitudetest.com/parts/user-profile-icon-account.png);}
-li.messages {background-image: url(http://new.pilotaptitudetest.com/parts/user-profile-icon-messages.png);}
-li.forum {background-image: url(http://new.pilotaptitudetest.com/parts/user-profile-icon-forum.png);}
-li.knowledgebase {background-image: url(http://new.pilotaptitudetest.com/parts/user-profile-icon-knowledgebase.png);}
-li.help {background-image: url(http://new.pilotaptitudetest.com/parts/user-profile-icon-help.png);}
+li.settings {background-image: url(/parts/user-profile-icon-settings.png);}
+li.profile {background-image: url(/parts/user-profile-icon-account.png);}
+li.messages {background-image: url(/parts/user-profile-icon-messages.png);}
+li.forum {background-image: url(/parts/user-profile-icon-forum.png);}
+li.knowledgebase {background-image: url(/parts/user-profile-icon-knowledgebase.png);}
+li.help {background-image: url(/parts/user-profile-icon-help.png);}
 
 #profile_display_container ul.sub_menu {
   margin: 0;

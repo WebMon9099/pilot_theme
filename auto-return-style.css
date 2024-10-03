@@ -12,7 +12,7 @@ html {background-color: #f1f1f1 !important}
 
 .s2member-return-body {
     font-family: 'Open Sans', sans-serif;
-    background-image: url(https://new.pilotaptitudetest.com/parts/login_logo_small.svg);
+    background-image: url(/parts/login_logo_small.svg);
     background-size: 300px;
     background-repeat: no-repeat;
     background-position: 50% 50px;
@@ -79,13 +79,13 @@ html {background-color: #f1f1f1 !important}
     padding: 10px 20px;
     font-family: 'Inter';
     font-size: 17px;
-    transition: 0.3s;
+    transition: transform 0.2s;
     margin-top: 25px;
     text-decoration: none !important;
 }
 
 #s2member-default-return-continue a:active, #s2member-default-return-continue a:hover {
-    background-color: #303030 !important;    
+    transform: scale(1.05)  
 }
 
 @media (max-width: 900px) {

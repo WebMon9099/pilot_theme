@@ -54,7 +54,7 @@ $category_link  = get_category_link( $first_cat->cat_ID ); ?>
 			// End of the loop.
 		endwhile;
 		?>
-<?php get_footer(); ?>
+<?php get_footer( 'knowledgebase' ); ?>
 	</main><!-- .site-main -->
 
 	<?php get_sidebar( 'content-bottom' ); ?>

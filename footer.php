@@ -18,6 +18,7 @@
 <div id="footer_container">	
 				<ul>
 					<li><a href="/about">About</a></li>
+					<li><a href="/updates">Updates</a></li>
 					<li><a href="/frequently-asked-questions">FAQ</a></li>
 					<li><a href="/terms-conditions">Terms</a></li>
 					<li><a href="/privacy-policy">Privacy</a></li>
@@ -39,8 +40,8 @@
 
 <div class="_third">
 	<b>Trending Pilot Assessments</b>
-	<a href="/indigo-pilot-cadet-scheme">IndiGo Pilot Cadet Scheme</a>
-	<a href="/ba-speedbird-pilot-academy">BA Speedbird Pilot Academy</a>
+	<a href="/indigo-cadet-pilot-programme">IndiGo Pilot Cadet Scheme</a>
+	<a href="/british-airways-speedbird-pilot-academy">BA Speedbird Pilot Academy</a>
 	<a href="/scoot-airlines">Scoot Airlines</a>
 	<a href="/leading-edge">Leading Edge</a>
 	<a href="/delta-air-lines-propel">Delta Air Lines Propel</a>
@@ -60,15 +61,12 @@
 	<div class="_menu">
 		<ul>
 					<li><a href="/about">About</a></li>
+					<li><a href="/updates">Updates</a></li>
 					<li><a href="/frequently-asked-questions">FAQ</a></li>
 					<li><a href="/terms-conditions">Terms</a></li>
 					<li><a href="/privacy-policy">Privacy</a></li>
 					<li><a href="/contact">Contact</a></li>
 				</ul>
-	</div>
-	<div class="_text">
-		<b>© 2011-2024 PilotAptitudeTest.com</b>
-		Unit 7, Mulberry Place, London, SE9 6AR, UK
 	</div>
 			</div>
 			

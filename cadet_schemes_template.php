@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying helpful reading posts
+ * The template for displaying cadet scheme posts
  * 
- * Template Name: Helpful Reading
+ * Template Name: Cadet Schemes
  *
  * Template Post Type: post
  *
@@ -40,7 +40,7 @@ $category_link  = get_category_link( $first_cat->cat_ID ); ?>
 			the_post();
 
 			// Include the single post content template.
-			get_template_part( 'template-parts/content', 'helpfulreading' );
+			get_template_part( 'template-parts/content', 'cadetschemes' );
 
 			if ( is_singular( 'attachment' ) ) {
 				// Parent post navigation.
@@ -61,4 +61,3 @@ $category_link  = get_category_link( $first_cat->cat_ID ); ?>
 
 </div><!-- .content-area -->
 </div>
-	

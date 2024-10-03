@@ -82,7 +82,10 @@ Our software can be used both short-term and long-term to help you to prepare fo
 		</div>
 		<div style="clear:both;"></div>
 	</div>
-
+<div class="user-information-grey">
+<b>Are you an Aspiring or Experienced Pilot?</b>
+Let us know whether you're an aspiring, newly-qualified or experienced pilot, and which assessment you're preparing for, to enable us to provide better one-to-one support.
+</div></br>
 	<!-- Custom Fields (Custom Registration/Profile Fields will appear here, when/if they've been configured). -->
 	<!-- Custom Fields will NOT be displayed to existing Users/Members that are already logged-in. s2Member assumes this information has already been collected in that case. -->
 	%%custom_fields%%
@@ -92,7 +95,10 @@ Our software can be used both short-term and long-term to help you to prepare fo
 <div class="s2member-pro-spacer-div"></div>
 	<div id="s2member-pro-stripe-checkout-form-coupon-section" class="s2member-pro-stripe-form-section s2member-pro-stripe-checkout-form-section s2member-pro-stripe-form-coupon-section s2member-pro-stripe-checkout-form-coupon-section">
 		<div id="s2member-pro-stripe-checkout-form-payment-section-title" class="s2member-pro-stripe-form-section-title">Complete your payment</div>
-		
+<div class="user-information-stripe">
+<b>Purchase securely with Credit or Debit Card</b>
+Next, purchase access to our software securely using <span>Stripe</span>, a trusted global leader in online payments.
+</div>
 		<div id="s2member-pro-coupon-code">
 			
 		<div id="s2member-pro-stripe-checkout-form-coupon-div" class="s2member-pro-stripe-form-div s2member-pro-stripe-checkout-form-div s2member-pro-stripe-form-coupon-div s2member-pro-stripe-checkout-form-coupon-div">

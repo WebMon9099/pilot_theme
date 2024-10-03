@@ -17,21 +17,21 @@ get_header(); ?>
 <div id="test_header">
 	<div class="_title">
 	<a href="/knowledgebase">Knowledgebase</a></div>
-	<a href="/tools/focus-articles">
+	<a href="/tools/focus-articles" style="display: none;">
 
-<div class="focus_articles_badge"><?php echo user_focused_articles_count(); ?></div></a>
+<div class="focus_articles_badge" style="display: none;"><?php echo user_focused_articles_count(); ?></div></a>
 
-	<div class="kb_search_box"><?php echo do_shortcode('[ivory-search id="951" title="Default Search Form"]'); ?>
+	<div class="kb_search_box" style="display: none;"><?php echo do_shortcode('[ivory-search id="951" title="Default Search Form"]'); ?>
 	</div>
-	<button class="search-icon" onclick="SearchBoxToggle()"></button>
+	<button class="search-icon" onclick="SearchBoxToggle()" style="display: none !important;"></button>
 </div>
 
 <?php get_sidebar(); ?>
 <div id="userguide_wrapper">
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-		<div id="search-box-popover"><div><span id="close" onclick="document.getElementById('search-box-popover').style.display='none';"></span></div>
-			<div><?php echo do_shortcode('[ivory-search id="983" title="Knowledgebase Mobile Search"]'); ?></div></div>
+		<div id="search-box-popover" style="display: none;"><div><span id="close" onclick="document.getElementById('search-box-popover').style.display='none';"></span></div>
+			<div style="display: none;"><?php echo do_shortcode('[ivory-search id="983" title="Knowledgebase Mobile Search"]'); ?></div></div>
 		<?php
 		// Start the loop.
 		while ( have_posts() ) :
@@ -52,7 +52,7 @@ get_header(); ?>
 	</main><!-- .site-main -->
 
 	<?php get_sidebar( 'content-bottom' ); ?>
-	<?php get_footer(); ?>
+	<?php get_footer( 'knowledgebase' ); ?>
 </div><!-- .content-area -->
 
 </div>

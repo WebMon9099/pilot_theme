@@ -7,19 +7,67 @@
  * @since Twenty Sixteen 1.0
  */
 ?>
+<style>
+
+.floating-menu ul {max-height: 26vh; overflow-y: auto;}
+
+/* width */
+.floating-menu ul::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.floating-menu ul::-webkit-scrollbar-track {
+    width: 5px;
+    opacity: 0.5;
+}
+
+/* Handle */
+.floating-menu ul::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 0px;
+    width: 5px;
+}
+
+/* Handle on hover */
+.floating-menu ul::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+    cursor: pointer !important;
+}
+
+</style>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<a href="/category/skills/"><img class="kb_back_arrow" src="/parts/return_arrow.svg"><div class="back_to_link">Back to Skills</div></a><?php twentysixteen_excerpt(); ?>
+<div class="post-header-container" style="border-top: 1px solid <?php the_field('article-color-2'); ?>; background: linear-gradient(to right, <?php the_field('article-color-2'); ?>, <?php the_field('article-color-2'); ?>, <?php the_field('article-color-2'); ?>95);"><div class="post-header" style="background-image: url('/parts/other-preparation/white_aircraft.png'); background-repeat: no-repeat; background-position-y: 40%;"><?php the_title(); ?> <span class="hidden">Information</span> <span>2024</span></div></div>
+	
+	<div class="floating-menu">
+	<div class="floating-menu-title" style="background-color: <?php the_field('article-color-3'); ?>">Contents</div>
+	<ul>
+	<li><a href="#about">About <?php the_title(); ?></a></li>
+	<li><a href="#breakdown-of-assessment">How is it assessed?</a></li>
+	<li><a href="#breakdown-of-assessment">Why is it assessed?</a></li>
+	<li><a href="#breakdown-of-assessment">Improving this Skill</a></li>
+	<li><a href="#using-our-software">Using our Software</a></li>
+	<li><a href="#faq">Frequently Asked Questions</a></li>
+	</ul>
+	<?php if(!is_user_logged_in()): ?>
+	<div class="product"><p>Preparation Software for the</br><span><?php the_field('associated-product'); ?></span></p>
+	<img src="<?php the_field('screenshot'); ?>">
+	<a href="/purchase-start"><div class="button">Buy now <span>from £29</span></div></a></div>
+	<?php else: // Else show this. ?>
+	<a href="<?php the_field('activity-link'); ?>"><div class="button-blue"><span>Jump to</span> Activities</div></a>
+	<?php endif; ?>
+	</div>
+	
 	<header class="entry-header">
-		<div class="post_thumbnail_holder"><div class="post_thumbnail" style="background-image: url(<?php the_post_thumbnail_url(); ?>); background-size: contain;"></div></div>
+	
 		<div class="header_text_container">
 			
-		<div class="_alt">Pilot Assessment:<br class="skills"><span style="color: #345466;"><?php the_title(); ?></span></div>
-		<div class="modification_date"><?php the_modified_date(); ?></div></br>
+			<div class="_alt" style="border-bottom: 2px solid <?php the_field('article-color'); ?>"><span><?php the_title(); ?></span> in Pilot Assessments</div></br>
+		<div class="update-data"><?php printf( __( '<b>Updated:</b> %s', 'textdomain' ), get_the_modified_date('j\<\s\u\p\>S\<\/\s\u\p\> M Y') ); ?></div>
 		</div>
 	
 	</header><!-- .entry-header -->
-	
-	
 	
 	<div class="entry-content">
 		<?php
@@ -40,36 +88,33 @@
 				get_template_part( 'template-parts/biography' );
 			}
 			?>
-		<div id="module-purchase" style="border-left: 3px solid #00acdd">
-			<div class="purchase-information">
-				<div class="purchase-header">Preparation Software for <span style="color: #293137;">Pilot Aptitude Tests</span></div>
-				<div class="purchase-description">
-					Use our software in your web browser on PC, Mac, iPhone and Android to improve your <?php the_title(); ?> and many other skills for a pilot aptitude test.</div>
-				<div class="purchase-benefits">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-				<div class="pat_helper_purchase_module">
-					<b>Do you have questions about our software?</b>
-<p>If you need to prepare for a pilot aptitude test and don't know where to start, we can answer your questions!</br> 
-Speak with us on <a href="#">Whatsapp Messenger</a>, <a href="#">Facebook Chat</a> or via <a href="#">Email</a>.</p>
-				</div>
-			</div>
 		
-			<div class="purchase-options" style="background-color: #f3f3f3">
-<div class="devices"><img src="/parts/dummy_devices.png" <="" div="">
-<a href="#"><div class="main-purchase-devices">Buy Now</div></a>
+
+<?php if(!is_user_logged_in()): ?>
+<div id="module-purchase" style="border-left: 3px solid <?php the_field('article-color'); ?>">
+<div class="purchase-information">
+<div class="purchase-header">Preparation Software for the <span style="color: #34424C"><?php the_field('associated-product'); ?></span></div>
+<div class="purchase-description">
+Use our software in your web browser on PC, Mac, iPhone and Android to prepare for the <?php the_title(); ?> test.</div>
+<div class="purchase-benefits">
+<p>Feature-packed and one-of-a kind preparation software for your assessment.</p>
+<p>Regularly updated, realistic and infinite simulations of aptitude tests.</p>
+<p>Instant activation, fast support and uniquely in-depth guidance.</p>
+
+</div>
+</div>
+<div class="purchase-options" style="background-color: #f3f3f3">
+<div class="devices"><img src="<?php the_field('screenshot'); ?>"></div>
+<?php echo do_shortcode('[average_rating_slim button="no" link="/about"]'); ?>
+<a href="#"><div class="main-purchase-devices" style="background-color: #7ce027">Buy now from £29</div></a>
 
 
-<a class="other-purchase-options" href="#">Instant activation, 365 days-a-year</a>
+<a class="other-purchase-options" href="/features">or, learn about our features</a>
 </div>
 </div>
-</div>
-		</div><!-- .entry-content -->
+<?php else: // Else show this. ?>
+<?php endif; ?>
+</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
 		<?php
@@ -85,9 +130,4 @@ Speak with us on <a href="#">Whatsapp Messenger</a>, <a href="#">Facebook Chat</
 			?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
-
-<div class="mobile-footer">
-	<a href="#" class="mobile-footer-inner" style="background-color: #34424C">Buy Now</a>
-	<div class="mobile-footer-description">Text description goes here</div>
-</div>
 

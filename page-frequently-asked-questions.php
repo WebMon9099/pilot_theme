@@ -338,7 +338,7 @@ If a customer is looking to purchase a joystick to make the most out of their pr
 
 To learn more about the unique features of our software, please click <a href="/features">here</a>.</br></br>
 
-Additionally, to learn about our story and how our preparation software has evolved over a period of thirteen years, please click <a href="/about">here</a></div>
+Additionally, to learn about our story and how our preparation software has evolved over a period of thirteen years, please click <a href="/about">here</a>.</div>
 
 			<div id="question32" class="_category_question">How does using your software aid my preparation for a computerised pilot aptitude test?</div>
 

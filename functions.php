@@ -894,7 +894,7 @@ function pat_latest_articles()
 	rsort($sticky);
 
 	/* Get the 5 newest stickies (change 5 for a different number) */
-	$sticky = array_slice($sticky, 0, 5);
+	$sticky = array_slice($sticky, 0, 6);
 
 	/* Query sticky posts */
 	$the_query = new WP_Query(array('post__in' => $sticky, 'ignore_sticky_posts' => 1));
@@ -903,7 +903,7 @@ function pat_latest_articles()
 		$return .= '<div class="pat-latest-articles"><ul>';
 		while ($the_query->have_posts()) {
 			$the_query->the_post();
-			$return .= '<a href="' . get_permalink() . '"><li style="border-right: 4px solid ' . get_field("article-color") . '"><div class="white_gradient_lg"></div>' . get_the_post_thumbnail() . '<div class="_inner_container"><div class="_article_title">' . get_the_title() . '</div></br><div class="_modification_date">Updated: ' . get_the_modified_date("j M o") . '</div></div></li></a>';
+			$return .= '<a href="' . get_permalink() . '"><li style="border-right: 4px solid ' . get_field("article-color") . '"><img src="' . get_field("organisation-image") . '"><div class="_inner_container"><div class="_article_title">' . get_the_title() . '</div></br><div class="_modification_date">Updated: ' . get_the_modified_date("j M o") . '</div></div></li></a>';
 		}
 		$return .= '</ul></div>';
 	} else {
@@ -930,6 +930,13 @@ function additional_template_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'additional_template_styles' );
 
+function other_prep_template_styles() {
+    if ( is_page_template( 'page_other_prep.php' ) ) {
+        wp_enqueue_style( 'page-template', get_stylesheet_directory_uri() . '/css/other-prep-template.css' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'other_prep_template_styles' );
+
 // Increase per process SQL records scanned for EOT Reminder Emails
 
 			add_filter ('ws_plugin__s2member_pro_eot_reminders_per_process', 'prefix_set_eot_per_process');
@@ -938,3 +945,100 @@ add_action( 'wp_enqueue_scripts', 'additional_template_styles' );
 				$per_process = 75;
 				return $per_process;
 				}
+
+add_action('template_redirect', 'redirect_logged_in_users_to_dashboard');
+
+function redirect_logged_in_users_to_dashboard() {
+    // Check if the current page is the specific page you want to apply the redirect on
+    if (is_page('/homepage')) {
+        if (is_user_logged_in()) {
+            wp_redirect('/dashboard');
+            exit;
+        }
+    }
+}
+
+function redirect_logged_in_users() {
+    // Check if the user is logged in
+    if (is_user_logged_in()) {
+        // Get the current page template
+        $template = get_page_template_slug();
+
+        // Check if the current template is 'page_product.php' or 'page_other_prep.php'
+        if ($template == 'page_product.php' || $template == 'page_other_prep.php') {
+            // Redirect the user to the '/activities' page
+            wp_redirect('/activities');
+            exit;
+        }
+    }
+}
+
+// Hook the redirect function to the 'template_redirect' action
+add_action('template_redirect', 'redirect_logged_in_users');
+
+function load_post_styles() {
+    if (is_single() || is_category()) {
+        wp_enqueue_style('post-styles', get_stylesheet_directory_uri() . '/knowledgebase-styles.css', array(), '1.0', 'all');
+    }
+}
+add_action('wp_enqueue_scripts', 'load_post_styles');
+
+function show_post_name($atts) {
+    $post_title = get_the_title();
+    return $post_title;
+}
+add_shortcode('post_name', 'show_post_name');
+
+function using_our_software_shortcode() {
+    ob_start();
+    $html = file_get_contents(get_template_directory() . '/using-our-software.html');
+    $html = do_shortcode($html);
+    echo $html;
+    return ob_get_clean();
+}
+add_shortcode('using-our-software', 'using_our_software_shortcode');
+
+function faq_flying_schools_shortcode() {
+    ob_start();
+    $html = file_get_contents(get_template_directory() . '/faq-flying-schools.html');
+    $html = do_shortcode($html);
+    echo $html;
+    return ob_get_clean();
+}
+add_shortcode('faq-flying-schools', 'faq_flying_schools_shortcode');
+
+function faq_aptitude_tests_shortcode() {
+    ob_start();
+    $html = file_get_contents(get_template_directory() . '/faq-aptitude-tests.html');
+    $html = do_shortcode($html);
+    echo $html;
+    return ob_get_clean();
+}
+add_shortcode('faq-aptitude-tests', 'faq_aptitude_tests_shortcode');
+
+function faq_cadet_schemes_shortcode() {
+    ob_start();
+    $html = file_get_contents(get_template_directory() . '/faq-cadet-schemes.html');
+    $html = do_shortcode($html);
+    echo $html;
+    return ob_get_clean();
+}
+add_shortcode('faq-cadet-schemes', 'faq_cadet_schemes_shortcode');
+
+function faq_airlines_shortcode() {
+    ob_start();
+    $html = file_get_contents(get_template_directory() . '/faq-airlines.html');
+    $html = do_shortcode($html);
+    echo $html;
+    return ob_get_clean();
+}
+add_shortcode('faq-airlines', 'faq_airlines_shortcode');
+
+function faq_skills_shortcode() {
+    ob_start();
+    $html = file_get_contents(get_template_directory() . '/faq-skills.html');
+    $html = do_shortcode($html);
+    echo $html;
+    return ob_get_clean();
+}
+add_shortcode('faq-skills', 'faq_skills_shortcode');

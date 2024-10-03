@@ -8,7 +8,7 @@ if(!defined('WPINC')) // MUST have WordPress.
 <html <?php language_attributes(); ?> class="no-js">
 
 <head>
-<link rel="stylesheet" id="twentysixteen-style-css" href="https://new.pilotaptitudetest.com/wp-content/themes/twentysixteen/auto-return-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="twentysixteen-style-css" href="/wp-content/themes/twentysixteen/auto-return-style.css" type="text/css" media="all">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
